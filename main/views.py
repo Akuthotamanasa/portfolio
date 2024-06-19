@@ -66,7 +66,7 @@ def skills(request):
     data = {
         'skills' : [
                     'py','django','c','cpp','java',
-                    'html','css','js','bootstrap',
+                    'html','css','js',
                     'git','github','githubactions',
                     'mysql','postgres','sqlite','mongodb',
                 ],
@@ -74,6 +74,7 @@ def skills(request):
                     'speaking english',
                     'Teamwork',
                     'Dedication',
+                    
                 ]
     }
     return HttpResponse(template.render(data,request))
