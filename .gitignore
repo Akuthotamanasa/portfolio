@@ -1,0 +1,14 @@
+migrations
+__pycache__
+__init__.py
+
+/portfolio/__pycache__
+/portfolio/__init__.py
+/portfolio/migrations
+
+/portfolio/__pycache__/urls.cpython-312.pyc
+
+
+
+
+.env

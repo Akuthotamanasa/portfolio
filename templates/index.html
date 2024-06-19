@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+    <head>
+        {% block style-element %}
+            <style>
+                #element-1 {
+                    background-color: lightgreen;
+                    color: #000;
+                    padding: 2px;
+                }
+                #element-1:hover {
+                    background-color: green;
+                    color: #fff;
+                }
+            </style>
+        {% endblock style-element %}
+    </head>
+    <body>
+        {% block main-content %}
+            <div class="about">
+                <h1>About</h1>
+                <hr>
+                    <p>Hello, <u style="background-color:pink">I'm Manasa</u>, 
+                        As a student am eager to seize opportunities and explore new horizons, 
+                        I bring a passion for learning and a proactive mindset to every endeavor. 
+                        My strengths lie in <b>research, communication, problem-solving, patience,</b>
+                        which I continuously develop to adapt to changing environments.
+                        I am driven by a desire to grow personally and professionally in the feild of <strong>Data science</strong>,
+                        aiming to make a meaningful impact.
+                        I am enthusiastic about embracing challenges that allow me to apply my skills and contribute effectively.
+                        I am committed to discovering and pursuing opportunities that align with my ambitions and aspirations.
+                    </p>
+            </div>
+            <script>
+                const element = document.getElementById("element-1");
+                element.scrollIntoView();
+            </script>
+        {% endblock main-content %}
+    </body>

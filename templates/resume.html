@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+    <head>
+        {% block style-element %}
+            <style>
+                #element-7 {
+                    background-color: lightgreen;
+                    color: #000;
+                    padding: 2px;
+                }
+                #element-7:hover {
+                    background-color: green;
+                    color: #fff;
+                }
+            </style>
+        {% endblock style-element %}
+    </head>
+    <body>
+        {% block main-content %}
+            <div class="resume">
+                <h1>Resume</h1>
+                <hr>
+                <a href={% static "resume/manasa.pdf" %} download="manasa.pdf">
+                   <h4>Get my resume</h4>
+                </a>
+            </div>
+            <script>
+                const element = document.getElementById("element-8");
+                element.scrollIntoView();
+            </script>
+        {% endblock main-content %}
+    </body>
